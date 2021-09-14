@@ -18,7 +18,7 @@ func main() {
 }
 func NewKafkaProducer() *kafka.Producer {
 	configMap := &kafka.ConfigMap{
-		"bootstrap.servers": "apache-kafka_kafka_1:9092",
+		"bootstrap.servers": "go-kafka:9092",
 	}
 
 	p, err := kafka.NewProducer(configMap)
